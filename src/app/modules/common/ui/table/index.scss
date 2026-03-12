@@ -1,0 +1,34 @@
+.table-component {
+  @apply
+    w-full
+  ;
+
+    &__row {
+      @apply
+        border-b-[1px]
+        border-light
+      ;
+    }
+
+    &__cell {
+      @apply
+      p-4
+      text-start
+      overflow-hidden
+      text-ellipsis
+    ;
+  }
+
+  &__header-cell {
+    @apply
+      font-medium
+      opacity-40
+    ;
+  }
+
+  &__counter {
+    @apply
+      font-medium
+    ;
+  }
+}

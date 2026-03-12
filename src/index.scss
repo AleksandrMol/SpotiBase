@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .base-container {
+    @apply
+      w-full
+      min-h-[100vh]
+      p-[40px]
+      bg-gradient-to-tr
+      from-[#050505]
+      to-[#1A1A1A]
+      text-base
+      text-light
+    ;
+    }
+
+  .block-container {
+    @apply
+      p-6
+      rounded-3xl
+      bg-gradient-to-tr
+      from-[#111111]
+      to-[#353535]
+    ;
+  }
+}
