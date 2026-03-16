@@ -1,4 +1,6 @@
+import { post } from "@app/axios/base/requests"
 import { ITableRow, TableComponent } from "@app/modules/common/ui/table/table-component"
+import { useEffect } from "react"
 
 interface Int extends ITableRow {
   name: string,
@@ -6,6 +8,20 @@ interface Int extends ITableRow {
 }
 
 export const GalleryComponent = (): JSX.Element => {
+
+  useEffect(() => {
+    post('token', {
+      'grant_type': 'client_credentials',
+      'client_id': 'aa3577e3763047c18c7c0acc3e4fcd91',
+      'client_secret': '7e68841ea40041adb631d8b6b4370cba',
+    }, {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    }).then((data) => {
+      console.log('data', data)
+    })
+  }, []);
 
   const rows: Int[] = [
     {
