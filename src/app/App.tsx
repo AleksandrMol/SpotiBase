@@ -4,6 +4,10 @@ import { router } from "./routes";
 
 import "./index.scss";
 
+/**
+ * Корневой компонент
+ * @return JSX
+ */
 function App(): JSX.Element {
   return (
     <SnackbarProvider maxSnack={ 3 } autoHideDuration={ 2000 }>

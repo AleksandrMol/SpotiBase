@@ -7,6 +7,7 @@
     "allowJs": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -17,8 +18,6 @@
     "baseUrl": "./src",
     "paths": {
       "@app/*": ["app/*"],
-      "@data/*": ["data/*"],
-      "@domain/*": ["domain/*"]
     },
     "jsx": "react-jsx"
   },

@@ -1,0 +1,12 @@
+{
+  "common": {
+    "language": "Language",
+    "login": "Login",
+    "register": "Register"
+  },
+
+  "header": {
+    "exit": "Exit",
+    "profile": "Profile"
+  }
+}

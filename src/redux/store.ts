@@ -1,7 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { galleryReducer } from './modules/gallery/slices/gallery-slice'
+import { configReducer } from './modules/configs/slices/config-slice'
 
 const rootReducer = {
+  appConfig: configReducer,
   galleryList: galleryReducer,
 }
 
