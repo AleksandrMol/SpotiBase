@@ -1,6 +1,4 @@
 import { ITableRow, TableComponent } from "@app/modules/common/ui/table/table-component"
-import { useSelector } from "react-redux"
-import { RootState } from "redux/store"
 
 interface Int extends ITableRow {
   name: string,
@@ -8,9 +6,6 @@ interface Int extends ITableRow {
 }
 
 export const GalleryComponent = (): JSX.Element => {
-  const { baseURL } = useSelector((state: RootState) => state.appConfig)
-  console.log('baseURL', baseURL);
-
   const rows: Int[] = [
     {
       name: 'name1',

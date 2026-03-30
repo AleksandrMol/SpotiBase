@@ -1,7 +1,7 @@
 import axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
 import { useRequestErrorHandling } from '@app/axios/error/error-handling'
 import { useSelector } from 'react-redux'
-import { RootState } from 'redux/store'
+import { RootState } from '@store/store'
 
 interface IUseApi {
   baseApi: AxiosInstance

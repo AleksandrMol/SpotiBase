@@ -42,6 +42,7 @@ export default defineConfig([
 
       'jsdoc/returns-type': 'off',
       'jsdoc/require-returns': 'off',
+      'jsdoc/require-returns-type': 'off',
 
       'jsdoc/require-param': 'error',
       'jsdoc/require-property': 'error',

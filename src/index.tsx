@@ -1,8 +1,8 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import App from "@app/App";
-import { store } from "./redux/store";
-import { setAppConfig } from "./redux/modules/configs/async/set-app-config";
+import { store } from "@store/store";
+import { setAppConfig } from "@store/modules/configs/async/set-app-config";
 import { Provider } from "react-redux";
 
 import "./index.scss";
@@ -14,8 +14,6 @@ import "./output.css"
 const bootstrap = async (): Promise<void> => {
   try {
     await store.dispatch(setAppConfig()).unwrap();
-  
-    console.log('store', store.getState());
 
     const root = ReactDOM.createRoot(
       document.getElementById('root') as HTMLElement

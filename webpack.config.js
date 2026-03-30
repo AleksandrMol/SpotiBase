@@ -39,8 +39,7 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
     alias: { // Тут тот же момент, что и в tsconfig.json, чтобы Webpack смог понять ссылки на директории
       "@app": path.resolve(__dirname, 'src/app'),
-      "@data": path.resolve(__dirname, 'src/data'),
-      "@domain": path.resolve(__dirname, 'src/domain')
+      "@store": path.resolve(__dirname, 'src/store'),
     },
   },
   output: {

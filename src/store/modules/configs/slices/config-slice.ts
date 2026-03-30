@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { appConfigInitialState } from "../initial-states/app-config-initial-state";
 import { setAppConfig } from "../async/set-app-config";
+import { ReducerNamesEnum } from "@app/enums/reducer-names-enum";
 
 export const configSlice = createSlice({
-  name: 'appConfig',
+  name: ReducerNamesEnum.APP_CONFIG,
   initialState: appConfigInitialState,
   reducers:{},
   extraReducers: (builder) => {
