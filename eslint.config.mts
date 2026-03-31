@@ -28,7 +28,7 @@ export default defineConfig([
     rules: {
       '@typescript-eslint/explicit-function-return-type': "error",
       'react/react-in-jsx-scope': 'off',
-
+      
       'jsdoc/require-jsdoc': ['error', {
         publicOnly: false,
         require: {
@@ -39,10 +39,11 @@ export default defineConfig([
           FunctionExpression: true,
         },
       }],
-
+      
       'jsdoc/returns-type': 'off',
       'jsdoc/require-returns': 'off',
       'jsdoc/require-returns-type': 'off',
+      'jsdoc/require-param-type': 'off',
 
       'jsdoc/require-param': 'error',
       'jsdoc/require-property': 'error',

@@ -1,10 +1,10 @@
 
 import { baseApi } from "@store/api/base/base-api";
-import { IGetAccesTokenBody } from "./interfaces";
+import { IGetAccessBodyResponse, IGetAccesTokenBody } from "./interfaces";
 
 export const accessTokenApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
-    getAccesToken: builder.mutation<string, IGetAccesTokenBody>({
+    getAccesToken: builder.mutation<IGetAccessBodyResponse, IGetAccesTokenBody>({
       query: (body) => {
         return {
           url: 'token',

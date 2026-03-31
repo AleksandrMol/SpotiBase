@@ -1,5 +1,6 @@
 export interface IAppConfig {
-  baseURL: string;
+  accountsURL: string;
+  apiURL: string;
   clientID: string;
   clientSecret: string;
 }

@@ -1,8 +1,9 @@
 import { SessionStorageKeysEnum } from "@app/enums/session-storage-keys-enum";
 
 /**
- * Установить значение в sessionStorage
+ * Записать данные в sessionStorage
  * @param key Ключ sessionStorage
+ * @param value данные
  */
 export const setSessionStorage = (key: SessionStorageKeysEnum, value: unknown ): void => {
   const stringifyVal = JSON.stringify(value);
@@ -11,7 +12,7 @@ export const setSessionStorage = (key: SessionStorageKeysEnum, value: unknown ):
 }
 
 /**
- * Получить значение из sessionStorage
+ * Получить данные из sessionStorage
  * @param key Ключ sessionStorage
  * @return Значение из sessionStorage
  */

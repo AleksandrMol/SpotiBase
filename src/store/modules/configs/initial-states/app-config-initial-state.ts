@@ -1,7 +1,8 @@
 import { IAppConfig } from "../interfaces/app-config";
 
 export const appConfigInitialState: IAppConfig = {
-  baseURL: 'base',
+  accountsURL: '',
+  apiURL: 'base',
   clientID: '',
   clientSecret: ''
 }
