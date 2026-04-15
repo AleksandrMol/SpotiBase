@@ -20,7 +20,7 @@ export const useRequestErrorHandling = (): IUseRequestErrorHandling => {
     400: ():void => { enqueueSnackbar(t('errors.400')) },
 
     401: ():void => { enqueueSnackbar(t('errors.401')) },
-    
+
     403: ():void => { enqueueSnackbar(t('errors.403')) },
 
     404: ():void => { enqueueSnackbar(t('errors.404')) },

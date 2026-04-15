@@ -23,7 +23,7 @@ const dynamicBaseQuery: typeof rawBaseQuery = async (args, api, extraOptions) =>
 };
 
 export const accountsApi = createApi({
-  reducerPath: ReducerNamesEnum.API,
+  reducerPath: ReducerNamesEnum.ACCOUNTS,
   baseQuery: dynamicBaseQuery,
   endpoints: () => ({})
 });

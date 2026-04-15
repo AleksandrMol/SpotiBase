@@ -5,7 +5,8 @@ interface Int extends ITableRow {
   secondName: string
 }
 
-export const GalleryComponent = (): JSX.Element => {
+export const GalleryPage = (): JSX.Element => {
+
   const rows: Int[] = [
     {
       name: 'name1',

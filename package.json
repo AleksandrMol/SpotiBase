@@ -7,6 +7,9 @@
     "build": "webpack --config webpack.config.js --mode production",
     "dev": "webpack-dev-server --config webpack.config.js --mode development"
   },
+  "engines": {
+    "node": "^24.0.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

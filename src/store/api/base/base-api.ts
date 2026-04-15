@@ -14,20 +14,24 @@ const dynamicBaseQuery: typeof rawBaseQuery = async (args, api, extraOptions) =>
   const baseUrl = state.appConfig.apiURL;
 
   const headers: FetchArgs['headers'] = {
-    'Authorization': accessToken ? `Bearer ${accessToken}` : undefined,
+    Authorization: accessToken ? `Bearer ${accessToken}` : undefined,
   }
 
   const adjustedArgs: string | FetchArgs =
     typeof args === 'string'
       ? {
-        headers: { ...headers },
-        url: baseUrl + args
-      }
+          url: baseUrl + args,
+          headers,
+        }
       : {
-        ...args,
-        headers: { ...headers },
-        url: baseUrl + args.url
-      };
+          ...args,
+          url: baseUrl + args.url,
+          headers: {
+            ...args.headers,
+            ...headers,
+          },
+        };
+
 
   return rawBaseQuery(adjustedArgs, api, extraOptions);
 };
